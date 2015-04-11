@@ -14,11 +14,9 @@
 
 		this.overlays = [
 			'pixel.png',
-			'bitcoin-icon.png',
-			'bitcoin-coin.png',
-			'bitcoin-logo.png',
-			'bitcoin-8bit.png',
-			'litecoin-coin.png'
+			'dash-logo.png',
+			'dash-icon.png',
+			'dash-b&w.png',
 		];
 
 		this.address = '';
@@ -59,7 +57,7 @@
 			qrcode;
 
 		$('#qrcode').qrcode({
-			text: 'bitcoin:' + this.address,
+			text: 'dash:' + this.address,
 			width: this.pixels * 26,
 			height: this.pixels * 26
 		});
@@ -127,7 +125,7 @@
 			data: {
 				type: 'base64',
 				title: this.address,
-				description: 'Via bitcoinqrcode.org',
+				description: 'Via qr.dash.pics',
 				image: image
 			},
 			dataType: 'json'
