@@ -1,1 +1,1 @@
-[bitcoinqrcode.org](http://bitcoinqrcode.org)
+[dash.pics/qr/](https://dash.pics/qr/)

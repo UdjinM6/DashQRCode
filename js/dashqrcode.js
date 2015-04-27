@@ -14,9 +14,10 @@
 
 		this.overlays = [
 			'pixel.png',
-			'dash-logo.png',
-			'dash-icon.png',
-			'dash-b&w.png',
+			'dash-logo.svg',
+			'dash-icon.svg',
+			'dash-icon-b&w.svg',
+			'dash-icon-donate.svg',
 		];
 
 		this.address = '';
@@ -125,7 +126,7 @@
 			data: {
 				type: 'base64',
 				title: this.address,
-				description: 'Via qr.dash.pics',
+				description: 'Via dash.pics/qr/',
 				image: image
 			},
 			dataType: 'json'
@@ -140,7 +141,7 @@
 		.error(function() {
 			spinner.hide();
 
-			alert('Sorry, the image could not be uploaded. We probably hit Imgur\'s upload limit.\n\nYou can still download the image and upload it yourself.');
+			alert('Sorry, the image could not be uploaded. We probably hit imgur\'s upload limit.\n\nYou can still download the image and upload it yourself.');
 		});
 	}
 
